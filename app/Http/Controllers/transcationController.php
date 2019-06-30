@@ -19,7 +19,7 @@ class transcationController extends Controller
         $Bike = Bikes::all();
         $users = User::all();
         $transcation=renting::all();
-        return view('transcation')->with('bike',$Bike)
+        return view('User.transcation')->with('bike',$Bike)
                                         ->with('transcation',$transcation)
                                         ->with('user',$users);
        
