@@ -14,6 +14,7 @@ class productController extends Controller
     public function index()
     {
         
+        
     }
 
     /**
