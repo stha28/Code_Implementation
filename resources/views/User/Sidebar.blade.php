@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Admin Dashboard</title>
+  <title>User Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="{{asset('assets/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -18,6 +18,8 @@
   <link href="{{asset('assets/css/sb-admin.css')}}" rel="stylesheet">
 
   <link href="{{asset('assets/css/admin-style.css')}}" rel="stylesheet">
+
+  <link href="{{ asset('assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
   <!-- <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet"> -->
 
@@ -54,34 +56,22 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addparts.create')}}">
         <i class="fa fa-motorcycle"></i>
-          <span>User Profile</span></a>
+          <span>Profile</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('addparts.index')}}">
+        <a class="nav-link" href="{{ route('partstranscation.index')}}">
         <i class="fa fa-motorcycle"></i>
-          <span>Parts Transcation</span></a>
+          <span>Parts Transaction Details</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addbikes.create')}}">
         <i class="fa fa-motorcycle"></i>
-          <span>Rent Transcation</span></a>
+          <span>Booking Details</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addCategory.create')}}">
         <i class="fa fa-cog"></i>
-          <span>Booking</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}">
-         <img src="{{asset('assets/img/logout.png')}}" alt="JSOFT"
-           onclick="event.preventDefault();
-           document.getElementById('logout-form').submit();">
-          <span>Log out</span>
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-         {{ csrf_field() }}
-         
-        </form>
+          <span>Renting Transaction Details</span></a>
       </li>
     </ul>
 
@@ -103,6 +93,8 @@
 
   <!-- Custom scripts for all pages-->
   <script src="{{asset('assets//js/sb-admin.min.js')}}"></script>
+
+  
 
   <script src="{{asset('assets//js/bootstrap.bundle.min.js')}}"></script>
 

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('User.Sidebar')
 
 @section('content')
 <div class="container mb-3" style="border: 2px solid burlywood;margin: 30px;">
