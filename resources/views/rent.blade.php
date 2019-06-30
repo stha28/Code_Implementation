@@ -56,25 +56,18 @@
 
                                 <div class="pick-up-date book-item">
                                     <h4>DATE:</h4>
-                                    <input id="startDate" type="date" name="DropoffDate" placeholder="Pick Up Date" />
+                                    <input id="endDate" type="date" name="DropoffDate" placeholder="Pick Up Date" />
                                 </div>
 
-                                   <!--== Car Choose ==-->
-                                <div class="choose-car-type book-item">
-                                    <h4>No OF DAYS:</h4>
-                                    <select class="custom-select" name="days">
-                                      <option selected>Select</option>
-                                      <option value="1">1</option>
-                                      <option value="2">2</option>
-                                      <option value="3">3</option>
-                                      <option value="1">5</option>
-                                      <option value="2">6</option>
-                                      <option value="3">7</option>
-                                    </select>
+                                <div class="pick-up-date book-item">
+                                    <h4>Days:</h4>
+                                    
+                                    <button class="btn btn-warning btn-sm text-white mb-2" onClick="datediff()">Calculate Days</button>
+                                    <input id="RentDays" type="number" name="RentDays" placeholder="Pick Up Date" readonly/>
                                 </div>
                                 <div class="pickup-location book-item">
                                     <h4>Contact Information:</h4>
-                                    <input class="form-control" required="required" name="contact" type="text" >
+                                    <input class="form-control" required="required" name="contact" type="text" onKeyUp="datediff()">
                                 </div>  
                                 <div class="col-md-12">
 									<div class="form-group">
@@ -102,3 +95,17 @@
 <script src="{{asset('assets/js/main.js')}}"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/js/plugins/gijgo.js')}}"></script>
+
+<script>
+ function datediff()
+{
+    var date1 = new Date(document.getElementById("startDate").value);
+var date2 = new Date(document.getElementById("endDate").value);
+
+var difference = date2 - date1;
+
+var days = difference/(24*3600*1000);
+
+    document.getElementById('RentDays').value = days;
+}
+ </script>
