@@ -40,6 +40,8 @@ Route::get('/Blog','HomeController@blog')->name('blog');
 
 Route::get('/Bikes','bikeController@index')->name('Bikes');
 
+Route::get('/Parts','partsController@index')->name('Parts');
+
 Route::get('/home','HomeController@home')->name('home');
 
 

@@ -28,7 +28,7 @@ class booking extends Model
         return $this->belongsTo('App\User','id');
     }
 
-    public function parts(){
-        return $this->hasMany('App\Bikes');
+    public function product(){
+        return $this->hasMany('App\Product');
     }
 }

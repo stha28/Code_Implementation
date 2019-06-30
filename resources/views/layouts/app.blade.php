@@ -37,7 +37,7 @@
                                 <li><a href="services.html">services</a></li>
                                 <li><a href="{{route('Bikes')}}">Bikes</a></li>
                                 <li><a href="{{route('Blog')}}">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="{{route('Parts')}}">Parts</a></li>
                                 @if (Auth::guest())
                                 <li><a href="">More</a>
                                     <ul>
