@@ -66,3 +66,8 @@ Route::resource('/rent','rentController');
 Route::resource('/transcation','transcationController');
 
 Route::resource('/admin/addparts','productController');
+
+Route::resource('/buy','buyController');
+
+Route::resource('/partstranscation','partstranscationController');
+

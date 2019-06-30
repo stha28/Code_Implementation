@@ -12,7 +12,7 @@
 								<div class="col-md-12">
 									<div class="form-group">
                                     <label>Product Name</label>
-                                    <input type="text" name="id" class="form-control" disabled value="{{$product->Productname}}">
+                                    <input type="text" name="id" class="form-control" disabled value="{{$product->Partname}}">
 			                  </div>
 			               </div>
 			               <div class="col-md-12">
@@ -38,7 +38,7 @@
 							  <div class="col-md-12">
 									<div class="form-group">
                                     <label for="price">Quantity</label>
-									<input class="form-control" required="required" name="quantity" onKeyUp="multiply()" id="quantity" type="number" min="1" max="{{$product->Quantity}}">
+									<input class="form-control" required="required" name="quantity" onKeyUp="multiply()" id="quantity" type="number" min="1" max="{{$product->Quantity}}" onKeyDown="return false">
 			                  </div>
 			               </div>
 						   <div class="col-md-12">
@@ -85,3 +85,16 @@
 				</div>
 			</div>
 		</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+function multiply()
+{
+    var a = Number(document.getElementById('quantity').value);
+    var b = Number(document.getElementById('price').value);
+    var c = a * b;
+
+    document.getElementById('total').value = c;
+}
+</script>
