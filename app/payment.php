@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class payment extends Model
+class Payment extends Model
 {
     protected $guarded;
 
@@ -12,7 +12,7 @@ class payment extends Model
         return $this->belongsTo('App\User','id');
     }
 
-    public function bike(){
-        return $this->hasMany('App\Bikes');
+    public function product(){
+        return $this->hasMany('App\Product');
     }
 }
