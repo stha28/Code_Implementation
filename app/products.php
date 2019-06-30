@@ -7,13 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class products extends Model
 {
     protected $guarded;
-    
+
     public function users(){
         return $this->belongsTo('App\Users','id');
     }
 
     public function booking(){
-        return $this->belongsTo('App\Booking','id');
+        return $this->belongsTo('App\booking','id');
     }
     
     public function paymemt(){
