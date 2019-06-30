@@ -16,7 +16,7 @@
                 <input type="file" name="image" class="form-control-file" accept="image/*">
             </div>
             <div class="col-md-6">
-                <img src="{{asset($product->partimage)}}" alt="{{$product->partname}}" width="50%">
+                <img src="{{asset($product->Partimage)}}" alt="{{$product->Partname}}" width="50%">
             </div>
         </div>
         <div class="row">
@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-md-12 form-group">
                 <label for="desc">Description</label> 
-                <textarea name="description" rows="5" class="form-control" value="{{$product->partdetail}}" ></textarea>
+                <textarea name="description" rows="5" class="form-control">"{{$product->Partdetail}}"</textarea>
             </div>
         </div>
 

@@ -95,7 +95,6 @@ class productController extends Controller
         $product->Price = $request->price; 
         $product->Partdetail = $request->description; 
         $product->Quantity = $request->Quantity; 
-        $product->Categoryid = $request->category; 
         $current = $product->Partimage;
         if($request->hasFile('image')){
             $image = $request->image;
@@ -110,7 +109,7 @@ class productController extends Controller
         }
         
         $product->save();
-        return redirect()->route('addproduct.index');
+        return redirect()->route('addparts.index');
     }
 
     /**

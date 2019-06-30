@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-md-12 form-group">
                 <label for="desc">Description</label> 
-                <textarea name="description" rows="5" class="form-control" value="{{$Bike->Bikedetail}}" ></textarea>
+                <textarea name="description" rows="5" class="form-control">"{{$Bike->Bikedetail}}" </textarea>
             </div>
         </div>
 

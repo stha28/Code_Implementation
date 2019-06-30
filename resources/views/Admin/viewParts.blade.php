@@ -27,7 +27,7 @@
                             <img src="{{asset($item->Partimage)}}" alt="{{$item->Partname}}" height="100">
                         </td>
                         <td>{{$item->Price}}</td>
-                        <td>{{$item->Partetail}}</td>
+                        <td>{{$item->Partdetail}}</td>  
                         <td>{{$item->Quantity}}</td>  
                         <td>
                         <a href="{{route('addparts.edit',['id'=>$item->id])}}" class="btn btn-outline-primary">Edit</a>
