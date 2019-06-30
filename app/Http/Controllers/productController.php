@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use App\Product;
+use App\products;
 
 class productController extends Controller
 {
@@ -15,10 +15,10 @@ class productController extends Controller
      */
     public function index()
     {   
-        $product = Product::all();
+        $product = products::all();
         $users = User::all();
-        return view('admin.product')->with('product',$product)
-                                    ->with('user',$users)
+        return view('admin.viewparts')->with('product',$product)
+                                    ->with('user',$users);
                                    
     }
 
@@ -29,7 +29,18 @@ class productController extends Controller
      */
     public function create()
     {
-        $product = new Product();
+        return view('admin.addparts');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $product = new products();
         $product->Partname = $request->name; 
         $product->Price = $request->price; 
         $product->Partdetail = $request->description; 
@@ -46,17 +57,6 @@ class productController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -64,8 +64,8 @@ class productController extends Controller
      */
     public function show($id)
     {
-        $product = Product::find($id);
-        return view('showproduct')->with('product',$product)
+        $product = Products::find($id);
+        return view('showproduct')->with('product',$product);
                                     
     }
 
@@ -77,8 +77,8 @@ class productController extends Controller
      */
     public function edit($id)
     {
-        $product = Product::findOrFail($id);
-        return view('user.editproduct')->with('product',$product);
+        $product = products::findOrFail($id);
+        return view('admin.editParts')->with('product',$product);
     }
 
     /**
@@ -90,7 +90,7 @@ class productController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $product = Product::findOrFail($id);
+        $product = products::findOrFail($id);
         $product->Partname = $request->name; 
         $product->Price = $request->price; 
         $product->Partdetail = $request->description; 
@@ -121,7 +121,7 @@ class productController extends Controller
      */
     public function destroy($id)
     {
-        $product = Product::findOrFail($id);
+        $product = Products::findOrFail($id);
         $product->delete();
         return redirect()->back();
     }

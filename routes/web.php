@@ -62,3 +62,5 @@ Route::resource('/Blog/Blogdetails','blogController');
 Route::resource('/rent','rentController');
 
 Route::resource('/transcation','transcationController');
+
+Route::resource('/admin/addparts','productController');
