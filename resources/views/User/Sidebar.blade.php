@@ -19,8 +19,6 @@
 
   <link href="{{asset('assets/css/admin-style.css')}}" rel="stylesheet">
 
-  <link href="{{ asset('assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
-
   <!-- <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet"> -->
 
   <link href="{{asset('assets//css/all.min.css')}}" rel="stylesheet">
@@ -64,12 +62,12 @@
           <span>Parts Transaction Details</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('addbikes.create')}}">
+        <a class="nav-link" href="{{ route('book.index')}}">
         <i class="fa fa-motorcycle"></i>
           <span>Booking Details</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ route('addCategory.create')}}">
+        <a class="nav-link" href="{{ route('transcation.index')}}">
         <i class="fa fa-cog"></i>
           <span>Renting Transaction Details</span></a>
       </li>

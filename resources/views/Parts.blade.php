@@ -40,7 +40,7 @@
                                         <h2><a href="#">{{$item->Partname}}</a></h2>
                                         <h5>Rs.{{$item->Price}}</h5>
                                         <p>{{$item->Partdetail}}.</p>
-                                        <a href="" class="rent-btn">Book It</a>
+                                        <a href="{{route('book.edit',$item->id)}}" class="rent-btn">Book It</a>
                                         <a href="{{route('buy.edit',$item->id)}}" class="rent-btn">Buy</a>
                                     </div>
                                 </div>

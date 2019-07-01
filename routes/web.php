@@ -69,6 +69,8 @@ Route::resource('/admin/addparts','productController');
 
 Route::resource('/buy','buyController');
 
+Route::resource('/book','bookController');
+
 Route::resource('/partstranscation','partstranscationController');
 
 Route::get('/user/dashboarduser','dashboarduserController@index')->name('userdashboard');

@@ -34,7 +34,7 @@
                             <ul>
                                 <li class="active"><a href="{{route('welcome')}}">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="{{ route('userdashboard',Auth::user()->id)}}">Dashboard</a></li>
+                                <li><a href="">Dashboard</a></li>
                                 <li><a href="{{route('Bikes')}}">Bikes</a></li>
                                 <li><a href="{{route('Blog')}}">Blog</a></li>
                                 <li><a href="{{route('Parts')}}">Parts</a></li>
@@ -48,7 +48,7 @@
                                 @else
                                 <li><a href="">{{Auth::user()->name}}</a>
                                     <ul>
-                                        <li><a href="{{route('profile.create')}}">Profile</a></li>
+                                        <li><a href="{{ route('userdashboard',Auth::user()->id)}}">Dashboard</a></li>
                                         <li><a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">Logout</a>

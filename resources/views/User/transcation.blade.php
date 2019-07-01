@@ -1,6 +1,7 @@
-@extends('layouts.app')
+@extends('User.Sidebar')
 
 @section('content')
+<div class="container mb-3" style="border: 2px solid burlywood;margin: 30px;">
 <h2 class="text-center py-2">Transaction Details</h2>
 <div class="container">
     <div class="row">
@@ -33,5 +34,6 @@
             </table>
         </div>
     </div>
+</div>
 </div>
 @endsection

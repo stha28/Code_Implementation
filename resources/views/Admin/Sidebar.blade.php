@@ -54,23 +54,38 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addparts.create')}}">
         <i class="fa fa-motorcycle"></i>
-          <span>User Profile</span></a>
+          <span>Add Parts</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addparts.index')}}">
         <i class="fa fa-motorcycle"></i>
-          <span>Parts Transcation</span></a>
+          <span>View Parts</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addbikes.create')}}">
         <i class="fa fa-motorcycle"></i>
-          <span>Rent Transcation</span></a>
+          <span>Add Bikes</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('addCategory.create')}}">
         <i class="fa fa-cog"></i>
-          <span>Booking</span></a>
+          <span>Add Category</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('addbikes.index')}}">
+        <i class="fa fa-motorcycle"></i>
+          <span>View Bikes</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{{ route('addBlog.create')}}">
+        <i class="fa fa-motorcycle"></i>
+          <span>Blog</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{{ route('ViewBlog')}}">
+        <i class="fa fa-motorcycle"></i>
+          <span>View Blog</span></a>
+        </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ route('logout') }}">
          <img src="{{asset('assets/img/logout.png')}}" alt="JSOFT"

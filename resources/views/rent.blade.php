@@ -109,3 +109,4 @@ var days = difference/(24*3600*1000);
     document.getElementById('RentDays').value = days;
 }
  </script>
+ @endsection
