@@ -8,8 +8,8 @@
                         <div class="display-table">
                             <div class="display-table-cell">
                                 <div class="slider-right-text">
-                                    <h1>BOOK A CAR TODAY!</h1>
-                                    <p>FOR AS LOW AS $10 A DAY PLUS 15% DISCOUNT <br> FOR OUR RETURNING CUSTOMERS</p>
+                                    <h1>BOOK A BIKE TODAY!</h1>
+                                    <p>FOR AS LOW AS Rs1000 A DAY <br> FOR OUR RETURNING CUSTOMERS</p>
                                 </div>
                             </div>
                         </div>

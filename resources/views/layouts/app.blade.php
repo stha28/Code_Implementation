@@ -3,12 +3,14 @@
 <head>
 
 	<title></title>
-	<link href="{{asset('assets//css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
 	<link href="{{asset('assets//css/style.css')}}" rel="stylesheet">
 	<link href="{{asset('assets//css/responsive.css')}}" rel="stylesheet">
 	<link href="{{asset('assets//css/reset.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/plugins/gijgo.css')}}" rel="stylesheet">
-	
+    <link href="{{asset('assets/css/plugins/magnific-popup.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/plugins/owl.carousel.min.css')}}" rel="stylesheet">
+	<link href="{{asset('assets/css/plugins/slicknav.min.css')}}" rel="stylesheet">
 	<link href="{{asset('assets/css/font-awesome.css')}}" rel="stylesheet">
 	
 
@@ -23,7 +25,7 @@
                     <!--== Logo Start ==-->
                     <div class="col-lg-4">
                         <a href="index2.html" class="logo">
-                            <img src="assets/img/logo.png" alt="JSOFT">
+                            <img src="" alt="">
                         </a>
                     </div>
                     <!--== Logo End ==-->
@@ -34,7 +36,7 @@
                             <ul>
                                 <li class="active"><a href="{{route('welcome')}}">Home</a></li>
                                 <li><a href="about.html">About</a></li>
-                                <li><a href="">Dashboard</a></li>
+                                <li><a href="{{route('Service')}}">Service</a></li>
                                 <li><a href="{{route('Bikes')}}">Bikes</a></li>
                                 <li><a href="{{route('Blog')}}">Blog</a></li>
                                 <li><a href="{{route('Parts')}}">Parts</a></li>
@@ -43,12 +45,15 @@
                                     <ul>
                                         <li><a href="{{route('Logincustom')}}">Login</a></li>
                                         <li><a href="{{route('register')}}">Register</a></li>
+                                        <li><a href="{{route('Help')}}">Help</a></li>
                                     </ul>
                                 </li>
                                 @else
                                 <li><a href="">{{Auth::user()->name}}</a>
                                     <ul>
                                         <li><a href="{{ route('userdashboard',Auth::user()->id)}}">Dashboard</a></li>
+                                        <li><a href="{{route('Help')}}">Review</a></li>
+                                        <li><a href="{{route('Help')}}">Help</a></li>
                                         <li><a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">Logout</a>
@@ -84,9 +89,9 @@
                                 <p>Lorem ipsum doloer sited amet, consectetur adipisicing elit. nibh auguea, scelerisque sed</p>
 
                                 <ul class="get-touch">
-                                    <li><i class="fa fa-map-marker"></i> 800/8, Kazipara, Dhaka</li>
-                                    <li><i class="fa fa-mobile"></i> +880 01 86 25 72 43</li>
-                                    <li><i class="fa fa-envelope"></i> kazukamdu83@gmail.com</li>
+                                    <li><i class="fa fa-map-marker"></i> Baneshwor, Shankhamool</li>
+                                    <li><i class="fa fa-mobile"></i> 9841388599</li>
+                                    <li><i class="fa fa-envelope"></i> Prashantshrestha19@gmail.com</li>
                                 </ul>
                                 <a href="https://goo.gl/maps/b5mt45MCaPB2" class="map-show" target="_blank">Show Location</a>
                             </div>
@@ -112,5 +117,17 @@
         </div>   
     </section>
     </body>
-    </html>
+    <script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/gijgo.js')}}"></script>
+<script src="{{asset('assets/js/plugins/isotope.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/vegas.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/magnific-popup.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/counterup.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/slicknav.min.js')}}"></script>
+<script src="{{asset('assets/js/popper.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/waypoints.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery-migrate.min.js')}}"></script>
+ </html>
 

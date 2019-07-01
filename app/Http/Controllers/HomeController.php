@@ -39,11 +39,6 @@ class HomeController extends Controller
         return view('Aboutus');
     }
 
-    public function service()
-    {
-        return view('Services');
-    }
-
     public function home()
     {
         return view('admin.adminDash');

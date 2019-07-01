@@ -44,11 +44,6 @@ Route::get('/Parts','partsController@index')->name('Parts');
 
 Route::get('/home','HomeController@home')->name('home');
 
-
-Route::get('/Aboutus','HomeController@about')->name('aboutus');
-
-Route::get('/Services','HomeController@service')->name('service');
-
 Route::post('/Login/custom','Logincustomcontroller@login')->name('Login.custom');
 
 Route::get('/Logincustom','Logincustomcontroller@index')->name('Logincustom');
@@ -70,6 +65,12 @@ Route::resource('/admin/addparts','productController');
 Route::resource('/buy','buyController');
 
 Route::resource('/book','bookController');
+
+Route::get('/Service','serviceController@index')->name('Service');
+
+Route::get('/Help','helpController@index')->name('Help');
+
+
 
 Route::resource('/partstranscation','partstranscationController');
 
