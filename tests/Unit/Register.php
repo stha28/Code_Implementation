@@ -6,7 +6,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class Register extends TestCase
 {
     /**
      * A basic unit test example.
@@ -17,4 +17,11 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function CreateUser()
+    {
+        $user =factory(\App\User::class)->create();
+    }
+
+
 }

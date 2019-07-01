@@ -28,11 +28,7 @@ class HomeController extends Controller
         return view('welcome');
     }
 
-    public function blog()
-    {
-        $blog=blog::all();
-        return view('Blog', compact('blog'));
-    }
+    
 
     public function home()
     {

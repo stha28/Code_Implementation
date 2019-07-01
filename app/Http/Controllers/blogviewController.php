@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\review;
-use App\User;
-class aboutController extends Controller
+
+class blogviewController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,8 @@ class aboutController extends Controller
      */
     public function index()
     {
-        $review=review::all();
-        $user=User::all();
-        return view('Aboutus', compact('review','user'));
+        $blog=blog::all();
+        return view('Blog', compact('blog'));
     }
 
     /**

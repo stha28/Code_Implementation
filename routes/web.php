@@ -30,13 +30,11 @@ Route::get('/blog','BlogController@index')->name('Blog');
 
 Route::resource('/admin/adminDash','HomeController');
 
-Route::get('/welcome', 'HomeController@index')->name('welcome');
-
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/ViewBlog', 'blogController@viewblog')->name('ViewBlog');
 
-Route::get('/Blog','HomeController@blog')->name('blog');
+Route::get('/Blog','blogviewController@index')->name('blog');
 
 Route::get('/Bikes','bikeController@index')->name('Bikes');
 
@@ -48,7 +46,9 @@ Route::get('/welcome','welcomeController@index')->name('welcome');
 
 Route::get('/Aboutus','aboutController@index')->name('Aboutus');
 
-Route::get('/Review','reviewController@index')->name('Review');
+Route::resource('/Review','reviewController');
+
+
 
 Route::post('/Login/custom','Logincustomcontroller@login')->name('Login.custom');
 

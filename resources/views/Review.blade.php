@@ -26,7 +26,7 @@
                 	<div class="login-page-content">
                 		<div class="login-form">
                 			<h3>Review Us!</h3>
-							<form method="POST" action="{{route('review.store')}}">
+							<form method="POST" action="">
                              @csrf	
 								<div class="username">
 									<textarea type="text" name="review" style="height: 107px;width: 99%;background-color: #ffd000;"></textarea>

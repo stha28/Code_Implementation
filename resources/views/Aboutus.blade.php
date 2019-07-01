@@ -104,42 +104,31 @@
                 </div>
                 <!-- Section Title End -->
             </div>
-
+            
             <div class="row">
                 <div class="col-lg-8 col-md-12 m-auto">
+                  
                     <div class="testimonial-content">
-                        <!--== Single Testimoial Start ==-->
+                    @foreach($review as $item)
                         <div class="single-testimonial">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis totam obcaecati impedit, at autem repellat vel magni architecto veritatis sed.</p>
-                            <h3>Vongchong Smith</h3>
+                            <p>{{$item->Review}}.</p>
+                            <h3><?php $user = App\User::findorFail($item->Userid)?>{{$user->name}}</h3>
                             <div class="client-logo">
                                 <img src="assets/img/client/client-pic-1.jpg" alt="JSOFT">
                             </div>
+                            
+                          
                         </div>
-                        <!--== Single Testimoial End ==-->
-
-                        <!--== Single Testimoial Start ==-->
-                        <div class="single-testimonial">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis totam obcaecati impedit, at autem repellat vel magni architecto veritatis sed.</p>
-                            <h3>Amader Tuni</h3>
-                            <div class="client-logo">
-                                <img src="assets/img/client/client-pic-3.jpg" alt="JSOFT">
-                            </div>
-                        </div>
-                        <!--== Single Testimoial End ==-->
-
-                        <!--== Single Testimoial Start ==-->
-                        <div class="single-testimonial">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis totam obcaecati impedit, at autem repellat vel magni architecto veritatis sed.</p>
-                            <h3>Atex Tuntuni Smith</h3>
-                            <div class="client-logo">
-                                <img src="assets/img/client/client-pic-2.jpg" alt="JSOFT">
-                            </div>
-                        </div>
-                        <!--== Single Testimoial End ==-->
-                    </div>
+                        @endforeach
+                        
+                    </div> 
+                    
                 </div>
+                
+                
+                
             </div>
+            
         </div>
     </section>
     <!--== Testimonials Area End ==-->

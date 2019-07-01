@@ -52,9 +52,10 @@
                                 <li><a href="">{{Auth::user()->name}}</a>
                                     <ul>
                                         <li><a href="{{ route('userdashboard',Auth::user()->id)}}">Dashboard</a></li>
-                                        <li><a href="{{route('Review')}}">Review</a></li>
+                                        <li><a href="{{route('Review.index')}}">Review</a></li>
                                         <li><a href="{{route('Help')}}">Help</a></li>
                                         <li>
+                                         <a href="#" data-toggle="modal" data-target="#logoutModal">Log Out</a>
                                         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                           <div class="modal-dialog" role="document">
                                             <div class="modal-content">
