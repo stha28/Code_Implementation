@@ -19,8 +19,6 @@
 
   <link href="{{asset('assets/css/admin-style.css')}}" rel="stylesheet">
 
-  <!-- <link href="{{asset('assets/css/bootstrap.css')}}" rel="stylesheet"> -->
-
   <link href="{{asset('assets//css/all.min.css')}}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
@@ -86,18 +84,34 @@
         <i class="fa fa-motorcycle"></i>
           <span>View Blog</span></a>
         </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ route('logout') }}">
-         <img src="{{asset('assets/img/logout.png')}}" alt="JSOFT"
-           onclick="event.preventDefault();
-           document.getElementById('logout-form').submit();">
-          <span>Log out</span>
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-         {{ csrf_field() }}
-         
-        </form>
+        <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
+        <i class="fa fa-power-off"></i>
+          <span>Log Out</span></a>
       </li>
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-warning " href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">Logout</button>
+
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            {{ csrf_field() }}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     </ul>
 
     @yield('content')

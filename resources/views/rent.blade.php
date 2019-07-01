@@ -50,12 +50,12 @@
 
                                 <!--== Pick Up Date ==-->
                                 <div class="pick-up-date book-item">
-                                    <h4>DATE:</h4>
+                                    <h4>PICK-UP DATE:</h4>
                                     <input id="startDate" type="date" name="PickupDate" placeholder="Pick Up Date" />
                                 </div>
 
                                 <div class="pick-up-date book-item">
-                                    <h4>DATE:</h4>
+                                    <h4>DROP-OFF DATE:</h4>
                                     <input id="endDate" type="date" name="DropoffDate" placeholder="Pick Up Date" />
                                 </div>
 

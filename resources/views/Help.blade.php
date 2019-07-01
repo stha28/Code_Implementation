@@ -1,6 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<section id="page-title-area" class="section-padding overlay">
+        <div class="container">
+            <div class="row">
+                <!-- Page Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>FAQ's</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- Page Title End -->
+            </div>
+        </div>
+    </section>
 <section id="faq-page-area" class="section-padding">
         <div class="container">
             <div class="row">
@@ -132,3 +147,4 @@
         </div>
 	 </section>
 	 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+	 <script src="{{asset('assets/js/popper.min.js')}}"></script>
