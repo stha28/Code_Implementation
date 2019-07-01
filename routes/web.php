@@ -44,6 +44,12 @@ Route::get('/Parts','partsController@index')->name('Parts');
 
 Route::get('/home','HomeController@home')->name('home');
 
+Route::get('/welcome','welcomeController@index')->name('welcome');
+
+Route::get('/Aboutus','aboutController@index')->name('Aboutus');
+
+Route::get('/Review','reviewController@index')->name('Review');
+
 Route::post('/Login/custom','Logincustomcontroller@login')->name('Login.custom');
 
 Route::get('/Logincustom','Logincustomcontroller@index')->name('Logincustom');

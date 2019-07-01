@@ -35,7 +35,7 @@
                         <nav class="mainmenu alignright">
                             <ul>
                                 <li class="active"><a href="{{route('welcome')}}">Home</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="{{route('Aboutus')}}">About</a></li>
                                 <li><a href="{{route('Service')}}">Service</a></li>
                                 <li><a href="{{route('Bikes')}}">Bikes</a></li>
                                 <li><a href="{{route('Blog')}}">Blog</a></li>
@@ -52,7 +52,7 @@
                                 <li><a href="">{{Auth::user()->name}}</a>
                                     <ul>
                                         <li><a href="{{ route('userdashboard',Auth::user()->id)}}">Dashboard</a></li>
-                                        <li><a href="{{route('Help')}}">Review</a></li>
+                                        <li><a href="{{route('Review')}}">Review</a></li>
                                         <li><a href="{{route('Help')}}">Help</a></li>
                                         <li>
                                         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -147,5 +147,6 @@
 <script src="{{asset('assets/js/popper.min.js')}}"></script>
 <script src="{{asset('assets/js/plugins/waypoints.min.js')}}"></script>
 <script src="{{asset('assets/js/jquery-migrate.min.js')}}"></script>
+<script src="{{asset('assets/js/plugins/owl.carousel.min.js')}}"></script>
  </html>
 

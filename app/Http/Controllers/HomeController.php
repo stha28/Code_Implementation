@@ -34,11 +34,6 @@ class HomeController extends Controller
         return view('Blog', compact('blog'));
     }
 
-    public function about()
-    {
-        return view('Aboutus');
-    }
-
     public function home()
     {
         return view('admin.adminDash');

@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use App\review;
 
-class reviewController extends Controller
+class aboutController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +13,7 @@ class reviewController extends Controller
      */
     public function index()
     {
-        return view('Review');
+        return view('Aboutus');
     }
 
     /**
@@ -36,11 +34,7 @@ class reviewController extends Controller
      */
     public function store(Request $request)
     {
-        $review= new review();
-        $review->Userid = $request->user()->id;   
-        $review->Review = $request->review;
-        $review->save();
-        return redirect()->back();
+        //
     }
 
     /**
