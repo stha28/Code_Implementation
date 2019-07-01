@@ -8,9 +8,9 @@
             <!-- Page Title Start -->
             <div class="col-lg-12">
                 <div class="section-title  text-center">
-                    <h2>Our Latest Articles</h2>
+                    <h2>About Us</h2>
                     <span class="title-line"><i class="fa fa-car"></i></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p></p>
                 </div>
             </div>
             <!-- Page Title End -->
@@ -25,7 +25,7 @@
                     <div class="section-title  text-center">
                         <h2>About us</h2>
                         <span class="title-line"><img src="assets/img/mo.png" alt="JSOFT"></span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Who Are We?</p>
                     </div>
                 </div>
                 <!-- Section Title End -->
@@ -37,7 +37,7 @@
                     <div class="display-table">
                         <div class="display-table-cell">
                             <div class="about-content">
-                                <p>Lorem simply dummy is a texted of the printing costed and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                                <p>EagleRider, the world's largest motorcycle rental, tour, and membership company, carries the largest selection of new Harley-Davidson, Yamaha, BMW, Honda, Indian, and more for rent and touring. All motorcycles are maintained to meet strict factory standards providing the most fun, safe, and affordable riding experience. EagleRider operates from over 200 worldwide locations, leads over 100 guided and self-drive motorcycle tours including Route 66 and the Wild West, and convenient one-way motorcycle rentals, luggage storage, free parking, free use of DOT-approved helmets, amazing Club EagleRider membership benefits, and more. </p>
                             </div>
                         </div>
                     </div>
@@ -60,8 +60,8 @@
                     <div class="col-lg-4">
                         <div class="about-feature-item">
                             <i class="fa fa-car"></i>
-                            <h3>ALL BRANDS</h3>
-                            <p>Loremed ipsumed is a compnayes odsoyel dolor sit amet, consectetur adipisicing elit. Nesciunted all of.</p>
+                            <h3>Money Back Guarantee</h3>
+                            <p>Anything that goes wrong, do not fret! We guarantee that you get your money back in one piece!</p>
                         </div>
                     </div>
                     <!-- Single Fretutes End -->
@@ -70,8 +70,8 @@
                     <div class="col-lg-4">
                         <div class="about-feature-item">
                             <i class="fa fa-car"></i>
-                            <h3>ALL BRANDS</h3>
-                            <p>Loremed ipsumed is a compnayes odsoyel dolor sit amet, consectetur adipisicing elit. Nesciunted all of.</p>
+                            <h3>Assured Bikes</h3>
+                            <p>Bikes that are Assured with Eagle Rental will be of the highest possible quality.</p>
                         </div>
                     </div>
                     <!-- Single Fretutes End -->
@@ -80,8 +80,8 @@
                     <div class="col-lg-4">
                         <div class="about-feature-item">
                             <i class="fa fa-car"></i>
-                            <h3>ALL BRANDS</h3>
-                            <p>Loremed ipsumed is a compnayes odsoyel dolor sit amet, consectetur adipisicing elit. Nesciunted all of.</p>
+                            <h3>Lowest Price Guarantee</h3>
+                            <p>Get all your favourite bikes for rent at the lowest possible price on the bike rental market.</p>
                         </div>
                     </div>
                     <!-- Single Fretutes End -->

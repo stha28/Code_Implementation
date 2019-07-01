@@ -21,7 +21,7 @@
                 @if(Auth::user()->id == $transaction->Userid)
             <tr>
             <?php $product = App\products::findorFail($transaction->Productid)?> 
-                        <td>{{$product->Productname}}</td>  
+                        <td>{{$product->Partname}}</td>  
                         <td>{{$product->created_at}}</td>
                         <td>{{$transaction->Quantity}}</td>  
                         <td>                 

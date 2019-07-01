@@ -95,6 +95,125 @@
         </div>
     </section>
     <!--== About Us Area End ==-->
+    <section id="service-area" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <!-- Section Title Start -->
+                <div class="col-lg-12">
+                    <div class="section-title  text-center">
+                        <h2>Our Services</h2>
+                        <span class="title-line"><i class="fa fa-car"></i></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- Section Title End -->
+            </div>
+
+            <div class="row">
+                <!-- Single Service Start -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="media">
+                            <div class="service-icon">
+                                <span></span>
+                                <img src="assets/img/services/service-icon-1.png" alt="JSOFT">
+                            </div>
+                            <div class="media-body">
+                                <h4>RENTAL BIKE</h4>
+                                <p>You can be a celebrity for a full night and half days with a nice one of our amazing Limousines, Hummers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Start -->
+
+                <!-- Single Service Start -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="media">
+                            <div class="service-icon">
+                                <span></span>
+                                <img src="assets/img/services/service-icon-2.png" alt="JSOFT">
+                            </div>
+                            <div class="media-body">
+                                <h4>BIKE REPAIR</h4>
+                                <p>You can be a celebrity for a full night and half days with a nice one of our amazing Limousines, Hummers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Start -->
+
+                <!-- Single Service Start -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="media">
+                            <div class="service-icon">
+                                <span></span>
+                                <img src="assets/img/services/service-icon-3.png" alt="JSOFT">
+                            </div>
+                            <div class="media-body">
+                                <h4>SELL BIKE PARTS</h4>
+                                <p>You can be a celebrity for a full night and half days with a nice one of our amazing Limousines, Hummers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Start -->
+
+                <!-- Single Service Start -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="media">
+                            <div class="service-icon">
+                                <span></span>
+                                <img src="assets/img/services/service-icon-4.png" alt="JSOFT">
+                            </div>
+                            <div class="media-body">
+                                <h4>LIFE INSURANCE</h4>
+                                <p>You can be a celebrity for a full night and half days with a nice one of our amazing Limousines, Hummers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Start -->
+
+                <!-- Single Service Start -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="media">
+                            <div class="service-icon">
+                                <span></span>
+                                <img src="assets/img/services/service-icon-5.png" alt="JSOFT">
+                            </div>
+                            <div class="media-body">
+                                <h4>BIKE WASH</h4>
+                                <p>You can be a celebrity for a full night and half days with a nice one of our amazing Limousines, Hummers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Start -->
+
+                <!-- Single Service Start -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="media">
+                            <div class="service-icon">
+                                <span></span>
+                                <img src="assets/img/services/service-icon-6.png" alt="JSOFT">
+                            </div>
+                            <div class="media-body">
+                                <h4>call driver</h4>
+                                <p>You can be a celebrity for a full night and half days with a nice one of our amazing Limousines, Hummers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service Start -->
+            </div>
+        </div>
+    </section>
   <script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
 <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>

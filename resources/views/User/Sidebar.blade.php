@@ -71,8 +71,8 @@
         <i class="fa fa-cog"></i>
           <span>Renting Transaction Details</span></a>
       </li>
-    </ul>
-    <li class="nav-item">
+      <li>
+      <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
         <i class="fa fa-power-off"></i>
           <span>Log Out</span></a>
@@ -100,6 +100,10 @@
       </div>
     </div>
   </div>
+
+</li>
+    </ul>
+    
 
     @yield('content')
 

@@ -2647,7 +2647,7 @@ body,
 ================================*/
 
 .ser-thumb-bg-1 {
-	background-image: url(assets/img/car/car-1.jpg);
+	background-image: url("../img/rent.jpg");
 }
 
 .ser-thumb-bg-2 {
